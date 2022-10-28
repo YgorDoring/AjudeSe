@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>                                                                                                                                                                                                                                                       <!-- Ygor Doring-->
+<resources>
+    
+    <string-array name="tmb_lifestyle">
+        <item>FAZ EXERCÍCIOS SEMANAIS ?</item>
+        <item>-- Pouco ou nenhum exercício</item>
+        <item>-- Exercícios leves, até 3 dias</item>
+        <item>-- Exercícios moderados, de 3 a 5 dias</item>
+        <item>-- Exercícios pesados, de 5 a 7 dias</item>
+        <item>-- Exercícios diários (até 2x / dia)</item>
+    </string-array>
+    
+</resources>

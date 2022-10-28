@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary700"
+        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:context=".view.MainActivity">
+
+        <ImageView
+            android:layout_width="260dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:gravity="top"
+            android:src="@drawable/ajudese_logo_white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="225dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radius_user"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="20dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="5dp">
+
+            <LinearLayout
+                android:layout_width="140dp"
+                android:layout_height="216dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="10dp"
+                android:background="@color/white"
+                android:gravity="right"
+                android:orientation="vertical"
+                android:paddingEnd="2dp">
+
+                <TextView
+                    android:id="@+id/txtViewAgeNumberUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="26"
+                    android:textColor="@color/primary700"
+                    android:textSize="32sp"
+                    app:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/txtViewAgeUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/agex"
+                    android:textColor="#8C93AF"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/poppins_light" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/divisor_app" />
+
+                <TextView
+                    android:id="@+id/txtViewHeightNumberUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="180"
+                    android:textColor="@color/primary700"
+                    android:textSize="32sp"
+                    app:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/txtViewHeightUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/heightx"
+                    android:textColor="#8C93AF"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/poppins_light" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/divisor_app" />
+
+                <TextView
+                    android:id="@+id/txtViewWeightNumberUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:text="72"
+                    android:textColor="@color/primary700"
+                    android:textSize="32sp"
+                    app:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/txtViewWeightUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/weight"
+                    android:textColor="#8C93AF"
+                    android:textSize="15sp"
+                    app:fontFamily="@font/poppins_light" />
+
+                <ImageView
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:src="@drawable/divisor_app" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="30dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="18dp"
+                    android:text="Minhas Informações"
+                    android:textColor="#8C93AF"
+                    android:textSize="14sp"
+                    app:fontFamily="@font/poppins_light" />
+
+                <TextView
+                    android:id="@+id/txtViewNameUser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:text="Ygor Doring"
+                    android:textColor="@color/primary700"
+                    android:textSize="24sp"
+                    app:fontFamily="@font/poppins_extrabold" />
+
+                <ImageView
+                    android:id="@+id/imgAddInfo"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:gravity="center"
+                    android:src="@drawable/healthy_app" />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:background="@drawable/radius"
+            android:orientation="vertical"
+            android:paddingStart="10dp"
+            android:paddingTop="25dp"
+            android:paddingEnd="10dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="ACESSO RÁPIDO"
+                android:textColor="#8C93AF"
+                android:textSize="20sp"
+                app:fontFamily="@font/poppins_bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                tools:listitem="@layout/main_item" />
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

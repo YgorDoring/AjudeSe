@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>                                                                                                                                                                                                                                                       <!-- Ygor Doring-->
+<resources>
+    <color name="primary200">#54C3C8</color>
+    <color name="primary500">#78CFD3</color>
+    <color name="primary700">#36B9BF</color>
+    <color name="teal_200">#5EFFEF</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="radius">#FFFFFF</color>
+    <color name="IMC_Background">#D9FCFF</color>
+</resources>

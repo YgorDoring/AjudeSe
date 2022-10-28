@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_app"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:context=".view.DataUsersActivity">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/principal_ajudese_logo" />
+
+        <EditText
+            android:id="@+id/edtDataUserName"
+            style="@style/EditTextArea"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_icon_name"
+            android:drawablePadding="8dp"
+            android:hint="@string/name"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edtDataUserAge"
+            style="@style/EditTextArea"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_icon_age"
+            android:drawablePadding="8dp"
+            android:hint="@string/age"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/edtDataUserHeight"
+            style="@style/EditTextArea"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_icon_height"
+            android:drawablePadding="8dp"
+            android:hint="@string/height"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtDataUserWeight"
+            style="@style/EditTextArea"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/custom_icon_fitness"
+            android:drawablePadding="8dp"
+            android:hint="@string/weight"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnDataUser"
+            style="@style/ButtonForm"
+            android:background="@drawable/bg_gradient_button"
+            android:text="Cadastrar Informações" />
+
+    </LinearLayout>
