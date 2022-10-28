@@ -14,9 +14,11 @@ O projeto consiste em um hub de soluções que vão de cálculos relacionados a 
 
 
 # TECNOLOGIAS UTILIZADAS
+- SplashActivity
 - RecycleView
 - ViewBinding
 - Room
+- WebView
 - Persistência de dados
 
 
