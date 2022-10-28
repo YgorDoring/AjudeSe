@@ -1,5 +1,5 @@
 # AJUDE-SE 
-Ajude-se é uma aplicação desenvolvida voltada a área nutricional com foco na qualidade de vida e bem-estar. Ajude-se é uma ideia de App própria com foco no meu crescimento profissional. [ASSISTA O VÍDEO DE COMO FUNCIONA O AJUDE-SE](https://www.youtube.com/watch?v=D4LPcLmdkYE)
+Ajude-se é uma aplicação desenvolvida voltada a área nutricional com foco na qualidade de vida e bem-estar. Ajude-se é uma ideia própria de App com foco no meu crescimento profissional. [ASSISTA O VÍDEO DE COMO FUNCIONA O AJUDE-SE](https://www.youtube.com/watch?v=D4LPcLmdkYE)
 
 ![Principal Image](https://user-images.githubusercontent.com/109803760/198567472-1cea97cc-e213-43ff-a298-22f295fac512.png)
 
@@ -7,7 +7,7 @@ Ajude-se é uma aplicação desenvolvida voltada a área nutricional com foco na
 # INFORMAÇÕES SOBRE O APP
 O projeto consiste em um hub de soluções que vão de cálculos relacionados a peso, até as farmácias mais próxima de você.
 - Descubra seu IMC
-- Quando de caloria você deve consumir com TMB
+- Quanto de caloria você deve consumir com TMB
 - Quanto de água você deve tomar
 - Farmácias próximas e como chegar
 - 18 dicas de saúde e bem estar
