@@ -1,5 +1,5 @@
 <resources>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <!-- Ygor Doring-->
-    <string name="app_name">Ajude-se - Saúde e Bem-Estar</string>
+    <string name="app_name">Ajude-se</string>
     <string name="label_imc">IMC</string>
     <string name="label_tmb">TMB</string>
     <string name="label_sugest">DICAS</string>

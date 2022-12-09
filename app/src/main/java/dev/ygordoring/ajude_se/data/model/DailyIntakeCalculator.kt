@@ -1,4 +1,4 @@
-package dev.ygordoring.ajude_se.model
+package dev.ygordoring.ajude_se.data.model
 
 class DailyIntakeCalculator {
     private val ML_JOVEM = 40.0

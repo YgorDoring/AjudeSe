@@ -13,7 +13,7 @@
         android:background="@color/primary700"
         android:gravity="bottom"
         android:orientation="vertical"
-        tools:context=".view.MainActivity">
+        tools:context=".ui.view.MainActivity">
 
         <ImageView
             android:layout_width="260dp"
@@ -143,6 +143,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginBottom="15dp"
+                    android:maxLines="2"
                     android:gravity="center"
                     android:text="Ygor Doring"
                     android:textColor="@color/primary700"

@@ -13,7 +13,7 @@
         android:background="@color/white"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".view.SplashActivity">
+        tools:context=".ui.viewmodel.SplashActivity">
 
         <ImageView
             android:layout_width="260dp"

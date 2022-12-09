@@ -1,4 +1,4 @@
-package dev.ygordoring.ajude_se.view
+package dev.ygordoring.ajude_se.ui.viewmodel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Visit the official folder at: https://github.com/YgorDoring/AjudeSe
@@ -9,7 +9,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import dev.ygordoring.ajude_se.application.App
 import dev.ygordoring.ajude_se.R
-import dev.ygordoring.ajude_se.model.Calc
+import dev.ygordoring.ajude_se.data.model.Calc
 import java.text.SimpleDateFormat
 import java.util.*
 

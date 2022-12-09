@@ -1,9 +1,10 @@
-package dev.ygordoring.ajude_se.view
+package dev.ygordoring.ajude_se.ui.viewmodel
 
 import android.content.Intent
 import android.os.Bundle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Visit the official folder at: https://github.com/YgorDoring/AjudeSe
 import android.os.Handler
 import dev.ygordoring.ajude_se.R
+import dev.ygordoring.ajude_se.ui.view.MainActivity
 
 
 class SplashActivity : MainActivity() {

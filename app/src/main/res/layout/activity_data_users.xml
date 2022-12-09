@@ -7,7 +7,7 @@
         android:background="@drawable/background_app"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".view.DataUsersActivity">
+        tools:context=".ui.viewmodel.DataUsersActivity">
 
         <ImageView
             android:id="@+id/imageView"
@@ -19,6 +19,7 @@
         <EditText
             android:id="@+id/edtDataUserName"
             style="@style/EditTextArea"
+            android:maxLength="16"
             android:background="@drawable/custom_input"
             android:drawableStart="@drawable/custom_icon_name"
             android:drawablePadding="8dp"

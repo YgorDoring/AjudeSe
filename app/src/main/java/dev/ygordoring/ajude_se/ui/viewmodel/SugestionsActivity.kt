@@ -1,6 +1,5 @@
-package dev.ygordoring.ajude_se.view
+package dev.ygordoring.ajude_se.ui.viewmodel
 
-import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Visit the official folder at: https://github.com/YgorDoring/AjudeSe
 import android.os.Bundle
 import android.webkit.WebView

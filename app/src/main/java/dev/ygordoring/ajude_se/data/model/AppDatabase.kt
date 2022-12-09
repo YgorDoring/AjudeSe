@@ -1,4 +1,4 @@
-package dev.ygordoring.ajude_se.model
+package dev.ygordoring.ajude_se.data.model
 
 import android.content.Context
 import androidx.room.*                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        //Visit the official folder at: https://github.com/YgorDoring/AjudeSe

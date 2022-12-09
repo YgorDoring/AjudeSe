@@ -1,43 +1,36 @@
-package dev.ygordoring.ajude_se.view
+package dev.ygordoring.ajude_se.ui.viewmodel
 
 import android.content.Context
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Visit the official folder at: https://github.com/YgorDoring/AjudeSe
 import android.view.Menu
 import android.view.MenuItem
 import android.view.inputmethod.InputMethodManager
-import android.widget.*
+import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import androidx.annotation.StringRes
 import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatActivity
 import dev.ygordoring.ajude_se.application.App
 import dev.ygordoring.ajude_se.R
-import dev.ygordoring.ajude_se.model.Calc
+import dev.ygordoring.ajude_se.data.model.Calc
 
-class TmbActivity : AppCompatActivity() {
+class ImcActivity : AppCompatActivity() {
 
     private lateinit var editWeight: EditText
     private lateinit var editHeight: EditText
-    private lateinit var editAge: EditText
-
-    private lateinit var lifestyle: AutoCompleteTextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_tmb)
+        setContentView(R.layout.activity_imc)
 
-        setSupportActionBar(findViewById(R.id.tmb_toolbar))
+        setSupportActionBar(findViewById(R.id.my_toolbar))
 
-        editWeight = findViewById(R.id.edit_tmb_weight)
-        editHeight = findViewById(R.id.edit_tmb_height)
-        editAge = findViewById(R.id.edit_tmb_age)
+        editWeight = findViewById(R.id.edit_imc_weight)
+        editHeight = findViewById(R.id.edit_imc_height)
 
-        lifestyle = findViewById(R.id.auto_lifestyle)
-        val items = resources.getStringArray(R.array.tmb_lifestyle)
-        lifestyle.setText(items.first())
-        val adapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, items)
-        lifestyle.setAdapter(adapter)
-
-        val btnSend: Button = findViewById(R.id.btn_tmb_send)
+        val btnSend: Button = findViewById(R.id.btn_imc_send)
         btnSend.setOnClickListener {
             if (!validate()) {
                 Toast.makeText(this, R.string.fields_messages, Toast.LENGTH_LONG).show()
@@ -46,23 +39,19 @@ class TmbActivity : AppCompatActivity() {
 
             val weight = editWeight.text.toString().toInt()
             val height = editHeight.text.toString().toInt()
-            val age = editAge.text.toString().toInt()
 
-            val result = calculateTmb(weight, height, age)
-            val response = tmbRequest(result)
-            if(response == 0.0) {
-                Toast.makeText(this, R.string.tmb_error, Toast.LENGTH_LONG).show()
-                return@setOnClickListener
-            }
+            val result = calculateImc(weight, height)
 
+            val imcResponseId = imcResponse(result)
             AlertDialog.Builder(this)
-                .setMessage(getString(R.string.tmb_response, response))
+                .setTitle(getString(R.string.imc_response, result))
+                .setMessage(imcResponseId)
                 .setPositiveButton(android.R.string.ok) {p0, which -> }
                 .setNegativeButton(R.string.details) { dialog, which ->
                     Thread {
                         val app = application as App
                         val dao = app.db.calcDao()
-                        dao.insert(Calc(type = "tmb", res = response))
+                        dao.insert(Calc(type = "imc", res = result))
 
                         runOnUiThread {
                             openListActivity()
@@ -91,33 +80,34 @@ class TmbActivity : AppCompatActivity() {
 
     private fun openListActivity() {
         val intent = Intent(this, ListCalcActivity::class.java)
-        intent.putExtra("type", "tmb")
+        intent.putExtra("type", "imc")
         startActivity(intent)
     }
 
-    private fun tmbRequest(tmb: Double) : Double {
-        val items = resources.getStringArray(R.array.tmb_lifestyle)
+    @StringRes
+    private fun imcResponse(imc: Double): Int {
         return when {
-            lifestyle.text.toString() == items [1] -> tmb * 1.2
-            lifestyle.text.toString() == items [2] -> tmb * 1.375
-            lifestyle.text.toString() == items [3] -> tmb * 1.55
-            lifestyle.text.toString() == items [4] -> tmb * 1.725
-            lifestyle.text.toString() == items [5] -> tmb * 1.9
-            else -> 0.0
+            imc < 14.0 -> R.string.imc_severely_low_weight
+            imc < 16.0 -> R.string.imc_very_low_weight
+            imc < 18.5 -> R.string.imc_low_weight
+            imc < 25.0 -> R.string.normal
+            imc < 30.0 -> R.string.imc_high_weight
+            imc < 35.0 -> R.string.imc_so_high_weight
+            imc < 40.0 -> R.string.imc_severely_high_weight
+            else -> R.string.imc_extreme_weight
         }
     }
 
-    private fun calculateTmb(weight: Int, height: Int, age: Int): Double {
-        return 66 + (13.8 * weight) + (5 * height) - (6.8 * age)
+    private fun calculateImc(weight: Int, height: Int): Double {
+        return weight / ((height / 100.0) * (height / 100.0))
     }
 
+    // Validation Rules
     private fun validate(): Boolean {
         return (editWeight.text.toString().isNotEmpty()
                 && !editWeight.text.toString().startsWith("0")
                 && editHeight.text.toString().isNotEmpty()
                 && !editHeight.text.toString().startsWith("0")
-                && editAge.text.toString().isNotEmpty()
-                && !editAge.text.toString().startsWith("0")
                 )
     }
 }

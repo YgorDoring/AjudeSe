@@ -1,4 +1,4 @@
-package dev.ygordoring.ajude_se.view
+package dev.ygordoring.ajude_se.ui.viewmodel
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Visit the official folder at: https://github.com/YgorDoring/AjudeSe

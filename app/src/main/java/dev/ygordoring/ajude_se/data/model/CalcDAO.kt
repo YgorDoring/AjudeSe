@@ -1,4 +1,4 @@
-package dev.ygordoring.ajude_se.model
+package dev.ygordoring.ajude_se.data.model
 
 import androidx.room.*
 

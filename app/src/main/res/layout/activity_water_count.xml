@@ -13,7 +13,7 @@
         android:background="@color/primary700"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context="dev.ygordoring.ajude_se.view.WaterCountActivity">
+        tools:context=".ui.viewmodel.WaterCountActivity">
 
         <ImageView
             android:id="@+id/ic_redefinir"

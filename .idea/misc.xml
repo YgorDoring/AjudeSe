@@ -3,6 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/custom_icon_age.xml" value="0.1265" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/custom_icon_fitness.xml" value="0.1265" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/custom_icon_height.xml" value="0.1265" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/ic_baseline_age.xml" value="0.1265" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/ic_baseline_age_hover.xml" value="0.1265" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/ic_baseline_fitness.xml" value="0.1265" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/layout/activity_data_users.xml" value="0.2203125" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/layout/activity_imc.xml" value="0.1" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/layout/activity_water_count.xml" value="0.22" />
+        <entry key="..\:/Users/Ygor Doring/AndroidStudioProjects/Ajude_se/app/src/main/res/menu/record.xml" value="0.2203125" />
         <entry key="..\:/Users/ygord/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable-v24/radius_sugestions.xml" value="0.155" />
         <entry key="..\:/Users/ygord/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/bg_gradient_button.xml" value="0.1375" />
         <entry key="..\:/Users/ygord/AndroidStudioProjects/Ajude_se/app/src/main/res/drawable/container_header.xml" value="0.1" />

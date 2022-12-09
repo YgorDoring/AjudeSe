@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="dev.ygordoring.ajude_se" >
+    package="dev.ygordoring.ajude_se"
+    android:versionCode="2"
+    android:versionName="2.0">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:name=".application.App"
@@ -20,7 +21,7 @@
         android:theme="@style/Theme.AppAjudese"
         tools:targetApi="31" >
         <activity
-            android:name=".view.SplashActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.SplashActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,28 +30,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".view.MainActivity"
+            android:name="dev.ygordoring.ajude_se.ui.view.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".view.WaterCountActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.WaterCountActivity"
             android:exported="false" />
         <activity
-            android:name=".view.PharmaciesActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.PharmaciesActivity"
             android:exported="false" />
         <activity
-            android:name=".view.SugestionsActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.SugestionsActivity"
             android:exported="false" />
         <activity
-            android:name=".view.DataUsersActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.DataUsersActivity"
             android:exported="false" />
         <activity
-            android:name=".view.ListCalcActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.ListCalcActivity"
             android:exported="false" />
         <activity
-            android:name=".view.ImcActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.ImcActivity"
             android:exported="false" />
         <activity
-            android:name=".view.TmbActivity"
+            android:name="dev.ygordoring.ajude_se.ui.viewmodel.TmbActivity"
             android:exported="false" />
 
         <meta-data

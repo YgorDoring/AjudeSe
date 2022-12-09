@@ -1,7 +1,7 @@
 package dev.ygordoring.ajude_se.application
 
 import android.app.Application                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         //Visit the official folder at: https://github.com/YgorDoring/AjudeSe
-import dev.ygordoring.ajude_se.model.AppDatabase
+import dev.ygordoring.ajude_se.data.model.AppDatabase
 
 
 class App : Application() {

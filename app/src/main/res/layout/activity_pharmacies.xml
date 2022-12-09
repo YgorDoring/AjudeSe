@@ -13,7 +13,7 @@
         android:background="@color/primary700"
         android:gravity="center"
         android:orientation="vertical"
-        tools:context=".view.PharmaciesActivity">
+        tools:context=".ui.viewmodel.PharmaciesActivity">
         <ImageView
             android:layout_width="260dp"
             android:layout_height="100dp"
